@@ -1,1 +1,1 @@
-# Smart Conttact Manager
+# Smart Contact Manager
