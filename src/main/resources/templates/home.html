@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+   <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
     <style>
         .container{
             margin: auto;
@@ -13,14 +14,16 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 data-th-text="${name}">Welcome to home page</h1>
-        <p>Youtube Channel: <span data-th-text="${YoutubeChannel}"></span></p>
+    <div class="container bg-gray-200 w-1/2 p-4 mt-4">
+        <h1 class="text-2xl font-bold" data-th-text="${name}">Welcome to home page</h1>
+        <p class="text-xl text-gray-700">Youtube Channel: <span data-th-text="${YoutubeChannel}"></span></p>
         <a target=”_blank” th:href="${Github}">Click here to open github Repo</a>
         <p>2024-04-26T22:05:55.876+05:30  INFO 9472 --- [scm2.0] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
             2024-04-26T22:05:55.963+05:30  INFO 9472 --- [scm2.0] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
             2024-04-26T22:05:55.983+05:30  INFO 9472 --- [scm2.0] [  restartedMain] com.skm.scm.Application                  : Started Application in 13.043 seconds (process running for 15.495)
         </p>
+        <button class="px-3 py-3 rounded bg-blue-700 text-white hover:b">Click Here</button>
     </div>
+
 </body>
 </html>
