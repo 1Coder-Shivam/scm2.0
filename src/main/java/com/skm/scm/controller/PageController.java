@@ -15,4 +15,15 @@ public class PageController {
         model.addAttribute("Github","https://github.com/1Coder-Shivam/scm2.0");
         return "home";
     }
+
+    @RequestMapping("/about")
+    public String aboutPage(Model model){
+        System.out.println("About page loading");
+        return "about";
+    }
+    @RequestMapping("/services")
+    public String servicesPage(Model model){
+        System.out.println("Service page loading");
+        return "services";
+    }
 }
