@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+        lang="en"
+        th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>About Page</title>
 </head>
 <body>
-    <h1>This is about page</h1>
-    <hr />
-    <div class="host-tag" th:insert="~{base :: parent(~{::p})}"></div>
-    <p>this is a dynamic content from about page</p>
+<div id="content">
+    <h1>Welcome to about page</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+        ratione!
+    </p>
+</div>
+<script>
+    console.log("about page");
+</script>
+<script>
+    console.log("second about page script");
+</script>
 </body>
 </html>
